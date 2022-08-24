@@ -1,0 +1,231 @@
+body {
+  background-image: url(../assets/technology/background-technology-desktop.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-weight: light;
+  font-family: "PT Serif", serif;
+}
+
+/* contain section */
+
+.container-fuild {
+  margin: 0 2% 0 5%;
+}
+
+/* box section */
+
+.box {
+  display: inline;
+  width: 700px;
+  height: 67px;
+  position: absolute;
+  top: 50px;
+  left: 476px;
+}
+
+/* blur box section */
+
+.blur-box {
+  width: 62.5%;
+  height: 14%;
+  filter: blur(2px);
+  background-color: #5b5e7229;
+  z-index: -5;
+  position: absolute;
+  top: 6%;
+  left: 37.5%;
+}
+
+/* logo section */
+
+.logo {
+  position: absolute;
+  top: 66px;
+  left: 57px;
+  width: 41px;
+  height: 41px;
+}
+
+hr {
+  border: #6b6b6b59 1px solid;
+  position: absolute;
+  top: 66px;
+  right: 822px;
+  width: 30%;
+}
+/* anchor color and their setting */
+li {
+  display: inline;
+  margin-left: 25px;
+  margin-top: 10px;
+}
+
+nav a {
+  font-family: sans-serif;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.521);
+  position: relative;
+  display: inline-block;
+  padding: 12px 25px;
+  text-transform: uppercase;
+}
+
+a:hover {
+  text-decoration: none;
+  color: white;
+}
+
+/* slide undeline */
+nav a::after {
+  content: ""; /*the content is empty on line*/
+  background: rgb(255, 255, 255);
+  height: 2px; /*this is about the heigth of underline*/
+  position: absolute; /* the postion about line is absolute  */
+  top: 66px; /*this control where the line display if it's top or bottom*/
+  transition: 0.16s all 0.025s; /* This is duration on line to appear*/
+}
+
+/* How the line effect start. */
+nav a::after {
+  left: 0;
+  right: 100%;
+}
+
+nav a:hover::after {
+  left: 0;
+  right: 0;
+}
+
+h1 {
+  color: #fff;
+  text-align: left;
+  font-size: 20px;
+  letter-spacing: 8px;
+  padding-left: 73px;
+  display: inline-block;
+  position: relative;
+  top: 177px;
+}
+h2 {
+  padding-left: 197px;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  color: #ffffff78;
+  font-size: 12px;
+}
+
+h3 {
+  padding-left: 197px;
+  color: #fff;
+  text-align: left;
+  font-size: 40px;
+  text-transform: uppercase;
+  line-height: 2;
+  letter-spacing: 10px;
+}
+
+/* row section */
+
+.row {
+  margin-top: 100px;
+}
+
+/* image section */
+
+.technology-img img {
+  height: 400px;
+  position: absolute;
+  top: 47px;
+}
+
+/* Text section */
+
+.text {
+  margin-top: 150px;
+}
+
+.paragraph {
+  padding-left: 197px;
+  color: #fff;
+}
+
+/* circel-number section */
+
+/* number-1 */
+.circle-nbr1 {
+  background: #c2bdbd;
+  width: 67px;
+  height: 67px;
+  border-radius: 50%;
+  display: flex;
+  position: absolute;
+  left: 55px;
+  top: 1px;
+}
+.circle-nbr1 p {
+  font-size: 26px;
+  text-transform: uppercase;
+  position: relative;
+  top: 14px;
+  left: 25px;
+  color: black;
+}
+
+.circle-nbr1:hover {
+  cursor: pointer;
+  background-color: #fff;
+  border: 2px rgb(8, 92, 247) dotted;
+}
+
+/* number-2 */
+.circle-nbr2 {
+  background: #c2bdbd;
+  width: 67px;
+  height: 67px;
+  border-radius: 50%;
+  display: flex;
+  position: absolute;
+  left: 55px;
+  top: 98px;
+}
+.circle-nbr2 p {
+  font-size: 26px;
+  text-transform: uppercase;
+  position: relative;
+  top: 14px;
+  left: 25px;
+  color: black;
+}
+
+.circle-nbr2:hover {
+  cursor: pointer;
+  background-color: #fff;
+  border: 2px rgb(8, 92, 247) dotted;
+}
+
+/* number-3 */
+.circle-nbr3 {
+  background: #c2bdbd;
+  width: 67px;
+  height: 67px;
+  border-radius: 50%;
+  display: flex;
+  position: absolute;
+  left: 55px;
+  top: 188px;
+}
+
+.circle-nbr3 p {
+  font-size: 26px;
+  text-transform: uppercase;
+  position: relative;
+  top: 14px;
+  left: 25px;
+  color: black;
+}
+
+.circle-nbr3:hover {
+  background-color: #fff;
+  border: 2px rgb(8, 92, 247) dotted;
+  cursor: pointer;
+}

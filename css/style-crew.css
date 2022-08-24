@@ -1,0 +1,247 @@
+body {
+  background-image: url(../assets/crew/background-crew-desktop.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-weight: light;
+  font-family: "PT Serif", serif;
+}
+
+/* contain section */
+
+.container-fuild {
+  margin: 0 5%;
+}
+
+/* box section */
+
+.box {
+  display: inline;
+  width: 700px;
+  height: 67px;
+  position: absolute;
+  top: 50px;
+  left: 476px;
+}
+
+/* blur box section */
+
+.blur-box {
+  width: 62.5%;
+  height: 14%;
+  filter: blur(2px);
+  background-color: #5b5e7229;
+  z-index: -5;
+  position: absolute;
+  top: 6%;
+  left: 37.5%;
+}
+
+/* logo section */
+
+.logo {
+  position: absolute;
+  top: 66px;
+  left: 57px;
+  width: 41px;
+  height: 41px;
+}
+
+/* navigation bar + horizontal line section*/
+
+/* hr {
+  width: 35%;
+  margin-left: 76px;
+  margin-top: 56px;
+} */
+
+hr {
+  border: #6b6b6b59 1px solid;
+  position: absolute;
+  top: 66px;
+  right: 822px;
+  width: 30%;
+}
+/* anchor color and setting */
+li {
+  display: inline;
+  margin-left: 25px;
+  margin-top: 10px;
+}
+
+nav a {
+  font-family: sans-serif;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.521);
+  position: relative;
+  display: inline-block;
+  padding: 12px 25px;
+  text-transform: uppercase;
+}
+/* end */
+
+a:hover {
+  text-decoration: none;
+  color: white;
+}
+
+/* slide undeline */
+nav a::after {
+  content: ""; /*the content is empty on line*/
+  background: rgb(255, 255, 255);
+  height: 2px; /*this is about the heigth of underline*/
+  position: absolute; /* the postion about line is absolute  */
+  top: 66px; /*this control where the line display if it's top or bottom*/
+  transition: 0.16s all 0.025s; /* This is duration on line to appear*/
+}
+
+/* How the line effect start. */
+nav a::after {
+  left: 0;
+  right: 100%;
+}
+
+nav a:hover::after {
+  left: 0;
+  right: 0;
+}
+
+/* Heading section */
+/* h1 {
+  color: #fff;
+  text-align: left;
+  font-size: 20px;
+  letter-spacing: 8px;
+  padding-left: 59px;
+  margin-top: 110px;
+  display: inline-block;
+  background-color: #082541;
+} */
+
+h1 {
+  color: #fff;
+  text-align: left;
+  font-size: 20px;
+  letter-spacing: 8px;
+  padding-left: 73px;
+  display: inline-block;
+  position: relative;
+  top: 177px;
+}
+h2 {
+  padding-left: 71px;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  color: #ffffff78;
+}
+
+h3 {
+  padding-left: 71px;
+  color: #fff;
+  text-align: left;
+  font-size: 40px;
+  text-transform: uppercase;
+  line-height: 2;
+  letter-spacing: 10px;
+}
+
+/* Text section */
+
+#crew {
+  margin-top: 110px;
+}
+.text {
+  text-align: left;
+  margin-top: 150px;
+}
+
+.text p {
+  padding-left: 71px;
+  color: #fff;
+}
+
+/* image section */
+
+/* douglas-image */
+
+.douglas-img {
+  padding-top: 90px;
+}
+
+.douglas-img img {
+  width: 343px;
+  height: 471px;
+  position: absolute;
+  top: 54px;
+}
+
+/* mark-image */
+
+.mark-img {
+  position: relative;
+  bottom: 270px;
+}
+
+.mark-img img {
+  height: 416px;
+  position: absolute;
+  left: 799px;
+}
+
+.mark-carousel {
+  padding-top: 14px;
+}
+
+/* victor-image */
+
+.victor-img {
+  position: relative;
+  bottom: 269px;
+}
+
+.victor-img img {
+  height: 416px;
+  position: absolute;
+  left: 799px;
+}
+
+.victor-carousel {
+  padding-top: 14px;
+}
+
+/* ansari-image */
+
+.ansari-img {
+  position: relative;
+  bottom: 295px;
+}
+
+.ansari-img img {
+  height: 416px;
+  position: absolute;
+  left: 799px;
+}
+
+.ansari-carousel {
+  padding-top: 14px;
+}
+/* carousel section */
+
+/* this make image come out carousel */
+.carousel-inner {
+  overflow: visible;
+}
+.carousel-item {
+  height: 500px;
+}
+.carousel-indicators {
+  padding-right: 784px;
+  margin-left: 44px;
+}
+
+.carousel-indicators li {
+  background-color: #424a40;
+  border-radius: 50%;
+  height: 15px;
+  width: 15px;
+  margin: 0 13px;
+}

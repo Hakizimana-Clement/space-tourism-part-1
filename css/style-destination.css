@@ -1,0 +1,216 @@
+body {
+  background-image: url(../assets/destination/background-destination-desktop.jpg);
+  background-repeat: repeat;
+  background-size: 100%;
+  font-weight: light;
+  font-family: "PT Serif", serif;
+}
+
+/* contain section */
+.container-fuild {
+  margin: 5% 5%;
+}
+
+/* Moon image */
+.moon-image {
+  width: 360px;
+  height: 360px;
+  position: absolute;
+  top: 292px;
+  left: 260px;
+}
+/* box section */
+
+.box {
+  display: inline;
+  width: 700px;
+  height: 67px;
+  position: absolute;
+  top: 50px;
+  left: 476px;
+}
+
+/* blur box section */
+
+.blur-box {
+  width: 62.5%;
+  height: 14%;
+  filter: blur(2px);
+  background-color: #5b5e7229;
+  z-index: -5;
+  position: absolute;
+  top: 6%;
+  left: 37.5%;
+}
+
+/* logo section */
+
+.logo {
+  position: absolute;
+  top: 66px;
+  left: 57px;
+  width: 41px;
+  height: 41px;
+}
+/* navigation bar  section*/
+
+hr {
+  width: 35%;
+  margin-left: 76px;
+  display: inline-block;
+  border: #6b6b6b59 1px solid;
+}
+/* anchor color and setting */
+li {
+  display: inline;
+  margin-left: 25px;
+  margin-top: 10px;
+}
+
+nav a {
+  font-family: sans-serif;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.521);
+  position: relative;
+  display: inline-block;
+  padding: 12px 25px;
+  text-transform: uppercase;
+}
+/* end */
+
+a:hover {
+  text-decoration: none;
+  color: white;
+}
+
+/* slide undeline */
+nav a::after {
+  content: ""; /*the content is empty on line*/
+  background: rgb(255, 255, 255);
+  height: 2px; /*this is about the heigth of underline*/
+  position: absolute; /* the postion about line is absolute  */
+  top: 66px; /*this control where the line display if it's top or bottom*/
+  transition: 0.16s all 0.025s; /* This is duration on line to appear*/
+}
+
+/* How the line effect start. */
+nav a::after {
+  left: 0;
+  right: 100%;
+}
+
+nav a:hover::after {
+  left: 0;
+  right: 0;
+}
+
+/* big headin section */
+h1 {
+  color: #fff;
+  text-align: center;
+  margin-top: 59px;
+  margin-right: 112px;
+  font-size: 20px;
+}
+/* text section */
+
+/* text section */
+.text {
+  top: 110px;
+  color: #fff;
+}
+
+.text a {
+  text-align: left;
+  font-size: 14px;
+}
+
+.text a::after {
+  content: ""; /*the content is empty on line*/
+  background: rgb(255, 255, 255);
+  height: 1.5px; /*this is about the heigth of underline*/
+  position: absolute; /* the postion about line is absolute  */
+  top: 40px; /*this control where the line display if it's top or bottom*/
+  transition: 0.16s all 0.025s; /* This is duration on line to appear*/
+}
+
+.text a::after {
+  left: 0;
+  right: 100px;
+}
+
+.text a:hover::after {
+  left: 0;
+  right: 0;
+}
+
+h2 {
+  color: #fff;
+  text-align: left;
+  font-size: 60px;
+  text-transform: uppercase;
+  letter-spacing: 23px;
+  line-height: 2;
+}
+
+.text ul {
+  padding-left: 0;
+}
+.text li {
+  margin-left: 0;
+}
+
+.text a {
+  padding-left: 0;
+}
+
+/* horizontal line */
+
+.text hr {
+  border: 1px #6b6b6b59 solid;
+  width: 70%;
+  margin-left: 0;
+}
+
+/* travel distance section */
+.avg-distance {
+  margin-left: 14px;
+  margin-right: 79px;
+  margin-bottom: 0px;
+}
+
+.avg-distance,
+.est-distance {
+  text-transform: uppercase;
+  font-size: 10px;
+}
+
+.number {
+  font-size: 35px;
+  margin-top: 0px;
+}
+/* .text {
+  color: #fff;
+  width: 28.3125%;
+  height: 18.0625%;
+  padding: 0 10px;
+  position: absolute;
+  top: 300px;
+  left: 140px;
+} */
+
+@media (max-width: 1129px) {
+  body {
+    background-image: url(../assets/home/background-home-tablet.jpg);
+  }
+}
+
+@media (max-width: 300px) {
+  body {
+    background-image: url(../assets/home/background-home-mobile.jpg);
+  }
+
+  h1 {
+    background-color: rgb(0, 204, 255);
+  }
+}
